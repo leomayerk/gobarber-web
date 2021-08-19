@@ -26,6 +26,7 @@
       "@typescript-eslint"
   ],
   "rules": {
+    "camelcase": "off",
     "linebreak-style": 0,
     "spaced-comment": ["error", "never"],
     "react-hooks/rules-of-hooks": "error",
