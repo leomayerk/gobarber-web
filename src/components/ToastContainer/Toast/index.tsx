@@ -25,8 +25,8 @@ const Toast: React.FC<ToastProps> = ({ message, style }) => {
       removeToast(message.id);
     }, 3000);
 
-    // Se eu retorno uma função dentro do useEffect, ela é
-    // automaeticamente executada qnd o componente deixa de existir
+    //Se eu retorno uma função dentro do useEffect, ela é
+    //automaeticamente executada qnd o componente deixa de existir
     return () => {
       clearTimeout(timer);
     };
@@ -35,7 +35,7 @@ const Toast: React.FC<ToastProps> = ({ message, style }) => {
   return (
     <Container
       type={message.type}
-      hasDescription={!!message.description}
+      hasDescription={Number(!!message.description)}
       style={style}
     >
       {icons[message.type || 'info']}

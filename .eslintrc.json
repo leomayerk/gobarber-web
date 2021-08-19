@@ -27,6 +27,7 @@
   ],
   "rules": {
     "linebreak-style": 0,
+    "spaced-comment": ["error", "never"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-unused-expressions": "off",
