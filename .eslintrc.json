@@ -38,6 +38,7 @@
     "import/prefer-default-export": "off",
     "import/no-duplicates": "off",
     "arrow-body-style": "off",
+    "arrow-parens": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
