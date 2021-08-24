@@ -26,6 +26,7 @@ const Input: React.FC<InputProps> = ({
   /*As funções handleInputFocus e handleInputBlur foram criadas - com
   useCallback para que não seja carregado toda vez as funções chamadas
   diretamentes no componente */
+
   const handleInputFocus = useCallback(() => {
     setIsFocused(true);
   }, []);
@@ -45,7 +46,13 @@ const Input: React.FC<InputProps> = ({
   }, [fieldName, registerField]);
 
   return (
-    <Container style={containerStyle} isErrored={!!error} isFilled={isFilled} isFocused={isFocused}>
+    <Container
+      style={containerStyle}
+      isErrored={!!error}
+      isFilled={isFilled}
+      isFocused={isFocused}
+      data-testid="input-container"
+    >
       { Icon && <Icon size={20} />}
       <input
         onFocus={handleInputFocus}
